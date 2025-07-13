@@ -10,7 +10,7 @@ from firebase_admin import credentials, db
 firebase_config = json.loads(os.getenv("FIREBASE_JSON"))
 cred = credentials.Certificate(firebase_config)
 firebase_admin.initialize_app(cred, {
-  'databaseURL': 'https://xpos-whitelist-bot.firebaseio.com/'
+    'databaseURL': 'https://xpos-whitelist-bot-default-rtdb.firebaseio.com/'
 })
 
 intents = discord.Intents.default()
